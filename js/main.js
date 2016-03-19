@@ -1,3 +1,4 @@
+// Scrolling JS
 $(document).on("ready", function(){
 	var navHeight = $(".nav-wrapper").outerHeight(true);
 
@@ -21,3 +22,4 @@ $(document).on("ready", function(){
 		});
 	});
 });
+

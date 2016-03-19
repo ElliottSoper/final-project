@@ -1,0 +1,23 @@
+.nav-wrapper {
+  background-color: #eee;
+  border-bottom: 1px solid black;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; }
+  .nav-wrapper .nav-main {
+    margin: 0;
+    padding: 0; }
+    .nav-wrapper .nav-main li {
+      display: block;
+      float: left; }
+      .nav-wrapper .nav-main li a {
+        display: block;
+        padding: 9px 18px;
+        transition: all .5s;
+        text-decoration: none; }
+        .nav-wrapper .nav-main li a:hover, .nav-wrapper .nav-main li a.is-current {
+          background-color: #ccc; }
+
+/*# sourceMappingURL=main.css.map */

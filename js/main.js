@@ -4,8 +4,192 @@ $(document).on("ready", function(){
 
 	$("body").css("margin-top", navHeight);
 
+	// default setup	
+	// show first image by default
+	// slideshow JS for starters
+	$('img.starters').eq(0).show();
+	// set the current SlidNum
+	var currentSlideNum = 0;
+	// how many slides does this have?
+	var slideCount = $('img.starters').length;
+
+	var doSlides = function(direction){
+		// do slide stuff
+		// hide currentSlideNum
+		$('img.starters').eq(currentSlideNum).fadeOut();
+		if (direction === 'next'){
+			// increase currentSlideNum
+			// because we don't use var below, it updates the global currentSlideNum
+			currentSlideNum = currentSlideNum + 1
+			console.log(currentSlideNum);
+			// if i'm at the end of the slideshow, start at 0 again
+			if(currentSlideNum === slideCount){
+				currentSlideNum = 0;
+			}
+		} else {
+			// Previous slide
+			// decrease current slide
+			if(currentSlideNum === 0){
+				currentSlideNum = slideCount -1;
+			} else {
+				currentSlideNum = currentSlideNum -1;
+			}
+			console.log(currentSlideNum);
+		}
+		// show the new current slide
+		$('img.starters').eq(currentSlideNum).fadeIn();
+	};
+
+	// invoke doSlides() via a click event on $('img'),
+	$('img, .js-next-starters').on('click', function(){
+		doSlides('next');
+	});
+	// create an interval
+	// stuff this into a button click event
+	// when you do this, note that var autoPlay
+	// is in the local scope (you'll need to hoist
+	// it to global scope so your pause button can clear it)
+	$('.js-play-starters').on('click', function(){
+		autoPlay = setInterval(function(){
+			doSlides('next');
+		}, 1000);
+		console.log(autoPlay);
+	});
+	$('.js-reverse-starters').on('click', function(){
+		autoPlay = setInterval(function(){
+			doSlides('reverse');
+		}, 1000);
+		console.log(autoPlay);
+	});
+	$('.js-pause-starters').on('click', function(){
+		clearInterval(autoPlay);
+	});
 
 
+
+	// slideshow JS for entrees
+	$('img.entrees').eq(0).show();
+	// set the current SlidNum
+	var currentSlideNum = 0;
+	// how many slides does this have?
+	var slideCount = $('img.entrees').length;
+
+	var doSlides = function(direction){
+		// do slide stuff
+		// hide currentSlideNum
+		$('img.entrees').eq(currentSlideNum).fadeOut();
+		if (direction === 'next'){
+			// increase currentSlideNum
+			// because we don't use var below, it updates the global currentSlideNum
+			currentSlideNum = currentSlideNum + 1
+			console.log(currentSlideNum);
+			// if i'm at the end of the slideshow, start at 0 again
+			if(currentSlideNum === slideCount){
+				currentSlideNum = 0;
+			}
+		} else {
+			// Previous slide
+			// decrease current slide
+			if(currentSlideNum === 0){
+				currentSlideNum = slideCount -1;
+			} else {
+				currentSlideNum = currentSlideNum -1;
+			}
+			console.log(currentSlideNum);
+		}
+
+		// show the new current slide
+		$('img.entrees').eq(currentSlideNum).fadeIn();
+
+	};
+	// invoke doSlides() via a click event on $('img'),
+	$('img, .js-next-entrees').on('click', function(){
+		doSlides('next');
+	});
+	// create an interval
+	// stuff this into a button click event
+	// when you do this, note that var autoPlay
+	// is in the local scope (you'll need to hoist
+	// it to global scope so your pause button can clear it)
+	$('.js-play-entrees').on('click', function(){
+		autoPlay = setInterval(function(){
+			doSlides('next');
+		}, 1000);
+		console.log(autoPlay);
+	});
+
+	$('.js-reverse-entrees').on('click', function(){
+		autoPlay = setInterval(function(){
+			doSlides('reverse');
+		}, 1000);
+		console.log(autoPlay);
+	});
+
+	$('.js-pause-entrees').on('click', function(){
+		clearInterval(autoPlay);
+	});
+
+	// slideshow JS for desserts
+	$('img.desserts').eq(0).show();
+	// set the current SlidNum
+	var currentSlideNum = 0;
+	// how many slides does this have?
+	var slideCount = $('img.desserts').length;
+
+	var doSlides = function(direction){
+		// do slide stuff
+		// hide currentSlideNum
+		$('img.desserts').eq(currentSlideNum).fadeOut();
+		if (direction === 'next'){
+			// increase currentSlideNum
+			// because we don't use var below, it updates the global currentSlideNum
+			currentSlideNum = currentSlideNum + 1
+			console.log(currentSlideNum);
+			// if i'm at the end of the slideshow, start at 0 again
+			if(currentSlideNum === slideCount){
+				currentSlideNum = 0;
+			}
+		} else {
+			// Previous slide
+			// decrease current slide
+			if(currentSlideNum === 0){
+				currentSlideNum = slideCount -1;
+			} else {
+				currentSlideNum = currentSlideNum -1;
+			}
+			console.log(currentSlideNum);
+		}
+		// show the new current slide
+		$('img.desserts').eq(currentSlideNum).fadeIn();
+	};
+
+	// invoke doSlides() via a click event on $('img'),
+	$('img, .js-next-desserts').on('click', function(){
+		doSlides('next');
+	});
+	// create an interval
+	// stuff this into a button click event
+	// when you do this, note that var autoPlay
+	// is in the local scope (you'll need to hoist
+	// it to global scope so your pause button can clear it)
+	$('.js-play-desserts').on('click', function(){
+		autoPlay = setInterval(function(){
+			doSlides('next');
+		}, 1000);
+		console.log(autoPlay);
+	});
+	$('.js-reverse-desserts').on('click', function(){
+		autoPlay = setInterval(function(){
+			doSlides('reverse');
+		}, 1000);
+		console.log(autoPlay);
+	});
+	$('.js-pause-desserts').on('click', function(){
+		clearInterval(autoPlay);
+	});
+
+
+	// JS for nav
 	$(".nav-main a").on("click", function(e){
 		console.log(e);
 		e.preventDefault();

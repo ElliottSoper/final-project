@@ -64,6 +64,7 @@ $(document).on("ready", function(){
 	$('.js-pause-starters').on('click', function(){
 		clearInterval(autoPlay);
 	});
+	
 
 
 
@@ -128,6 +129,8 @@ $(document).on("ready", function(){
 	$('.js-pause-entrees').on('click', function(){
 		clearInterval(autoPlay);
 	});
+
+
 
 	// slideshow JS for desserts
 	$('img.desserts').eq(0).show();

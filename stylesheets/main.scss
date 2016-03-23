@@ -1,35 +1,67 @@
 @import 'font-awesome/font-awesome';
 
-h1 {
+
+.section-container {
+	
+}
+
+h2 {
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 }
 
+/* #page-starters {
+	overflow: hidden;
+	height: 100vh;
+}
+
+#page-entrees {
+	overflow: hidden;
+	height: 100vh;
+}
+#page-desserts {
+	overflow: hidden;
+	height: 100vh;
+} */
+
 .slideshow {
 	width: 100%;
 	position: relative;
-	height: 100vh;
+	text-align: center;
 	overflow: hidden;
+	height: 560px;
+	border: 2px solid red;
+	text-align: center;
 }
 
 
 img {
 	border: 4px solid black;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 100px;
-	text-align: center;
+	/*margin-left: auto;
+	margin-right: auto;*/
+	// padding: 100px;
 	vertical-align: middle;
-	margin-bottom: 100px;
-}
+	margin-bottom: 10px;
+	// overflow: hidden;
+	display: none;
+	//width: 500px;
+	max-height: 500px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}	
 
+.button-container {
+	text-align: center;
+}
 
 .nav-wrapper {
 	background-color: #eee;
 	border-bottom: 1px solid black;
 	overflow: auto; // hold the height even with floated children
 	position: fixed;
+	z-index:1;
 	top: 0;
 	left: 0;
 	width: 100%;

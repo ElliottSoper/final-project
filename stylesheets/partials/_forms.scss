@@ -1,0 +1,13 @@
+input {
+	font-size: 18px;
+	padding: 10px 15px;
+	border: 1px solid #aa863a;
+	color: black;
+	float: right;
+	display: block;
+
+	@include placeholder {
+	color: black;
+	}
+}
+

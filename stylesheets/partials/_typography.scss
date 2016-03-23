@@ -1,0 +1,53 @@
+@mixin headline($color: black){
+	font-size: 18px;
+	color: $color-font-default;
+	font-family: $typography-default-font;
+}
+%headline-default{
+	font-size: 18px;
+	color: #aa863a;
+}
+
+.headline-title {
+	@extend %headline-default;
+	font-size: 80px;
+	text-align: center;
+	color: #283018;
+
+}
+
+.headline-lrg {
+	@extend %headline-default;
+	font-size: 50px;
+	display: none;
+}
+@media all and (min-width: 480px) {
+	.headline-lrg {
+		display: block;
+	}
+}
+
+.headline-med {
+	@extend %headline-default;
+	font-size: 30px
+}
+
+%button-default {
+	font-size: 30px;
+	color: #729f98;
+	&:hover {
+		color: black;
+		border: 3px solid #729f98;
+		background-color: #283018;
+	}
+}
+.button-primary {
+	@extend %button-default;
+	border: 2px solid black;
+	background-color: #283018;
+}
+.button-secondary {
+	@extend %button-default;
+	border: 2px solid #729f98;
+	color: #aa863a;
+}

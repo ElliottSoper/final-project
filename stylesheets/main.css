@@ -2074,7 +2074,8 @@
   content: ""; }
 
 .section-container {
-  height: 100vh; }
+  height: 90vh;
+  border: 2px solid green; }
 
 h2 {
   margin-bottom: 0px;
@@ -2098,7 +2099,7 @@ h2 {
   position: relative;
   text-align: center;
   overflow: hidden;
-  height: 560px;
+  height: 85vh;
   border: 2px solid red;
   text-align: center; }
 

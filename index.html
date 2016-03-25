@@ -16,7 +16,7 @@
 					<li><a href="#page-home">Home</a></li>
 					<li><a href="#page-starters">Starters</a></li>
 					<li><a href="#page-entrees">Entrees</a></li>
-					<li><a href="#page-desserts" class="js-desserts">Desserts</a></li>
+					<li><a href="#page-desserts">Desserts</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -32,7 +32,7 @@
 			<section id="page-starters">
 				<h2 class="headline-title">Starters</h2>
 				<div class="slideshow">
-					<img class ="starters" src="food-images/avocado-caprese-salad.png">
+					<img class ="starters" id="js-modal-open" src="food-images/avocado-caprese-salad.png">
 					<img class ="starters" src="food-images/buffalo-dip.png">
 					<img class ="starters" src="food-images/corn.png">
 					<img class ="starters" src="food-images/hummus.png">
@@ -42,8 +42,28 @@
 				<div class="button-container">
 					<button class="js-play-starters button-secondary">&#9658</button>
 					<button class="js-pause-starters button-secondary">&#10074;&#10074</button>
-					<button class="js-reverse-starters button-secondary">&#9668</button>
+					<button class="js-reverse-starters button-secondary button-flipped">&#9658</button>
 				</div>
+				<div class="modal-wrapper">
+			<div class="modal">
+				<header class="modal-header">
+					<button class="btn js-modal-close">x</button>
+				</header>
+				<br>
+				<!-- content of our modal -->
+				<div class="modal-content">
+					<h3>Title of Modal</h3>
+					<p>Content of Modal</p>
+					<p>Content of Modal</p>
+					<p>Content of Modal</p>
+					<p>Content of Modal</p>
+					<p>Content of Modal</p>
+					<p>Content of Modal</p>
+				</div>
+				<footer class="modal-footer"></footer>
+			</div>
+		</div>
+
 			</section>	
 		</div>
 
@@ -62,7 +82,7 @@
 				<div class="button-container">
 					<button class="js-play-entrees button-secondary">&#9658</button>
 					<button class="js-pause-entrees button-secondary">&#10074;&#10074</button>
-					<button class="js-reverse-entrees button-secondary">&#9668</button>
+					<button class="js-reverse-entrees button-secondary button-flipped">&#9658</button>
 				</div>
 			</section>
 		</div>	
@@ -80,7 +100,7 @@
 				<div class="button-container">
 					<button class="js-play-desserts button-secondary">&#9658</button>
 					<button class="js-pause-desserts button-secondary">&#10074;&#10074</button>
-					<button class="js-reverse-desserts button-secondary">&#9668</button>
+					<button class="js-reverse-desserts button-secondary button-flipped">&#9658</button>
 				</div>
 			</section>	
 		</div>

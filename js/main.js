@@ -1,3 +1,38 @@
+//modal
+$(document).on("ready", function(){
+
+	//create function that shows our modal
+	var modal = function(state, htmlString){
+		if(state === "open"){
+	   $('.modal-wrapper').fadeIn(function(){
+	   	// heres my callback code
+	   	$("body").addClass("modal-on")
+	   	$(".modal-content").html(htmlString);
+	   });
+	} else if (state === "close"){
+	   $('.modal-wrapper').fadeOut(function(){
+	   	$("body").removeClass("modal-on")
+	   });
+	  }
+
+	   
+
+	};
+
+//create an event listner on an anchor (.js-modal-open),
+// to invoke modal();
+
+	$("#js-modal-open").on("click", function(){
+		modal("open");
+	});
+
+	$(".js-modal-close").on("click", function(){
+		modal("close");
+	});
+
+});
+
+
 // Scrolling JS
 $(document).on("ready", function(){
 	var navHeight = $(".nav-wrapper").outerHeight(true);
@@ -41,8 +76,8 @@ $(document).on("ready", function(){
 	};
 
 	// invoke doSlides() via a click event on $('img'),
-	$('img.starters, .js-next-starters').on('click', function(){
-		doSlidesStarters('next');
+	$('img.starters, .js-pause-starters').on('click', function(){
+		clearInterval(autoPlay);
 	});
 	// create an interval
 	// stuff this into a button click event
@@ -52,13 +87,13 @@ $(document).on("ready", function(){
 	$('.js-play-starters').on('click', function(){
 		autoPlay = setInterval(function(){			
 			doSlidesStarters('next');
-		}, 1000);
+		}, 1500);
 		console.log(autoPlay);
 	});
 	$('.js-reverse-starters').on('click', function(){
 		autoPlay = setInterval(function(){			
 			doSlidesStarters('reverse');
-		}, 1000);
+		}, 1500);
 		console.log(autoPlay);
 	});
 	$('.js-pause-starters').on('click', function(){
@@ -115,14 +150,14 @@ $(document).on("ready", function(){
 	$('.js-play-entrees').on('click', function(){
 		autoPlay = setInterval(function(){
 			doSlidesEntrees('next');
-		}, 1000);
+		}, 1500);
 		console.log(autoPlay);
 	});
 
 	$('.js-reverse-entrees').on('click', function(){
 		autoPlay = setInterval(function(){
 			doSlidesEntrees('reverse');
-		}, 1000);
+		}, 1500);
 		console.log(autoPlay);
 	});
 
@@ -178,13 +213,13 @@ $(document).on("ready", function(){
 	$('.js-play-desserts').on('click', function(){
 		autoPlay = setInterval(function(){
 			doSlidesDesserts('next');
-		}, 1000);
+		}, 1500);
 		console.log(autoPlay);
 	});
 	$('.js-reverse-desserts').on('click', function(){
 		autoPlay = setInterval(function(){
 			doSlidesDesserts('reverse');
-		}, 1000);
+		}, 1500);
 		console.log(autoPlay);
 	});
 	$('.js-pause-desserts').on('click', function(){
@@ -209,4 +244,5 @@ $(document).on("ready", function(){
 		});
 	});
 });
+
 

@@ -1,5 +1,6 @@
-@import 'font-awesome/font-awesome';
-@import 'partials/typography';
+@import 'partials/nav';
+@import 'partials/buttons';
+@import 'partials/modal';
 
 body {
 	background-color: white;
@@ -15,19 +16,6 @@ h2 {
 	padding-bottom: 0px;
 }
 
-/* #page-starters {
-	overflow: hidden;
-	height: 100vh;
-}
-
-#page-entrees {
-	overflow: hidden;
-	height: 100vh;
-}
-#page-desserts {
-	overflow: hidden;
-	height: 100vh;
-} */
 
 .slideshow {
 	width: 100%;
@@ -53,35 +41,7 @@ img {
 	transform: translate(-50%, -50%);
 }	
 
-.button-container {
-	text-align: center;
-}
 
-button {
-	height: 45px;
-	vertical-align: center;
-	bottom: 0%;
-}
-
-%button-default {
-	font-size: 30px;
-	color: #729f98;
-	&:hover {
-		color: black;
-		border: 3px solid #729f98;
-		background-color: #283018;
-	}
-}
-.button-primary {
-	@extend %button-default;
-	border: 2px solid black;
-	background-color: #283018;
-}
-.button-secondary {
-	@extend %button-default;
-	border: 2px solid #283018;
-	color: #aa863a;
-}
 %headline-default{
 	font-size: 18px;
 	color: #aa863a;
@@ -92,41 +52,5 @@ button {
 	font-size: 50px;
 	text-align: left;
 	color: #283018;
-}
-
-.nav-wrapper {
-	background-color: #eee;
-	border-bottom: 1px solid black;
-	overflow: auto; // hold the height even with floated children
-	position: fixed;
-	z-index:1;
-	top: 0;
-	left: 0;
-	width: 100%;
-
-	.nav-main {
-		margin: 0;
-		padding: 0;
-
-
-		li {
-			display: block;
-			float: left;
-
-			a {
-				display: block;
-				padding: 9px 18px;
-				transition: all .5s;
-				text-decoration: none;
-				color: #aa863a;
-
-				&:hover,
-				&.is-current {
-					color: #283018;
-					background-color: #ccc;
-				}
-			}
-		}
-	}
 }
 

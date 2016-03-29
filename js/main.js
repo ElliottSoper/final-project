@@ -1,36 +1,4 @@
 //modal
-$(document).on("ready", function(){
-
-	//create function that shows our modal
-	var modal = function(state, htmlString){
-		if(state === "open"){
-	   $('.modal-wrapper').fadeIn(function(){
-	   	// heres my callback code
-	   	$("body").addClass("modal-on")
-	   	$(".modal-content").html(htmlString);
-	   });
-	} else if (state === "close"){
-	   $('.modal-wrapper').fadeOut(function(){
-	   	$("body").removeClass("modal-on")
-	   });
-	  }
-
-	   
-
-	};
-
-//create an event listner on an anchor (.js-modal-open),
-// to invoke modal();
-
-	$("#js-modal-open").on("click", function(){
-		modal("open");
-	});
-
-	$(".js-modal-close").on("click", function(){
-		modal("close");
-	});
-
-});
 
 
 // Scrolling JS
@@ -139,8 +107,8 @@ $(document).on("ready", function(){
 
 	};
 	// invoke doSlides() via a click event on $('img'),
-	$('img.entrees, .js-next-entrees').on('click', function(){
-		doSlidesEntrees('next');
+	$('img.entrees, .js-pause-entrees').on('click', function(){
+		clearInterval(autoPlay);
 	});
 	// create an interval
 	// stuff this into a button click event
@@ -202,8 +170,8 @@ $(document).on("ready", function(){
 	};
 
 	// invoke doSlides() via a click event on $('img'),
-	$('img.desserts, .js-next-desserts').on('click', function(){
-		doSlidesDesserts('next');
+$('img.desserts, .js-pause-desserts').on('click', function(){
+		clearInterval(autoPlay);
 	});
 	// create an interval
 	// stuff this into a button click event

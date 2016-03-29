@@ -1,8 +1,9 @@
-body.modal-on {
+@media all and (min-width: 550px){
+body.modal-on-acs, body.modal-on-bd, body.modal-on-corn, body.modal-on-hummus, body.modal-on-cvs, body.modal-on-ftb, body.modal-on-mlc, body.modal-on-sag, body.modal-content-br, body.modal-content-cb, body.modal-content-cm, body.modal-content-ba {
 	overflow: hidden;
 }
 
-.modal-wrapper {
+.modal-wrapper-acs, .modal-wrapper-bd, .modal-wrapper-corn, .modal-wrapper-hummus, .modal-wrapper-cvs, .modal-wrapper-ftb, .modal-wrapper-mlc, .modal-wrapper-sag, .modal-wrapper-br, .modal-wrapper-cb, .modal-wrapper-cm, .modal-wrapper-ba {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -12,9 +13,9 @@ body.modal-on {
 	display: none;
 
 
-	.modal {
+	.modal-acs, .modal-bd, .modal-corn, .modal-hummus, .modal-cvs, .modal-ftb, .modal-mlc, .modal-sag, .modal-br, .modal-cb, .modal-cm, .modal-ba {
 		background-color: white;
-		width: 400px;
+		width: 500px;
 		min-height: 200px;
 		margin: 0 auto;
 		position: relative;
@@ -23,22 +24,107 @@ body.modal-on {
 		border: 10px solid #aa863a;
 		
 	}
-	.js-modal-close {
+	.js-modal-close-acs, .js-modal-close-bd, .js-modal-close-corn, .js-modal-close-hummus, .js-modal-close-cvs, .js-modal-close-ftb, .js-modal-close-mlc, .js-modal-close-sag, .js-modal-close-br, .js-modal-close-cb, .js-modal-close-cm, .js-modal-close-ba {
 		float: left;
 		font-size: 10px;
 		font-weight: bold;
 		height: 25px;
 		width: 25px;
 		text-align: center;
+		padding: 0px;
+		margin: 0px;
 	}
 
-	.modal-content{
+	.modal-content-acs, .modal-content-bd, .modal-content-corn, .modal-content-hummus, .modal-content-cvs, .modal-content-ftb, .modal-content-mlc, .modal-content-sag, .modal-content-br, .modal-content-cb, .modal-content-cm, .modal-content-ba {
 		text-align: center;
 
 	}
+	
+	h2{
+		font-size: 30px;
+		font-family:'Lobster', cursive;
+		text-decoration: underline;
+		padding-bottom: 15px;
+		color: #283018;
+	}
+
 	h3 {
-		font-size: 25px;
+		font-size: 20px;
 		margin: 5px;
 		color: #283018;
 	}
+
+	p {
+		text-align: left;
+		margin-left: 5px;
+		font-size: 15px;
+	}
 }
+}
+
+
+@media all and (max-width: 550px){
+body.modal-on-acs, body.modal-on-bd, body.modal-on-corn, body.modal-on-hummus, body.modal-on-cvs, body.modal-on-ftb, body.modal-on-mlc, body.modal-on-sag, body.modal-content-br, body.modal-content-cb, body.modal-content-cm, body.modal-content-ba {
+	overflow: hidden;
+}
+
+.modal-wrapper-acs, .modal-wrapper-bd, .modal-wrapper-corn, .modal-wrapper-hummus, .modal-wrapper-cvs, .modal-wrapper-ftb, .modal-wrapper-mlc, .modal-wrapper-sag, .modal-wrapper-br, .modal-wrapper-cb, .modal-wrapper-cm, .modal-wrapper-ba {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
+	display: none;
+
+
+	.modal-acs, .modal-bd, .modal-corn, .modal-hummus, .modal-cvs, .modal-ftb, .modal-mlc, .modal-sag, .modal-br, .modal-cb, .modal-cm, .modal-ba {
+		background-color: white;
+		width: 370px;
+		min-height: 200px;
+		margin: 0 auto;
+		position: relative;
+		top:50%;
+		transform: translateY(-50%);
+		border: 10px solid #aa863a;
+		
+	}
+	.js-modal-close-acs, .js-modal-close-bd, .js-modal-close-corn, .js-modal-close-hummus, .js-modal-close-cvs, .js-modal-close-ftb, .js-modal-close-mlc, .js-modal-close-sag, .js-modal-close-br, .js-modal-close-cb, .js-modal-close-cm, .js-modal-close-ba {
+		float: left;
+		font-size: 10px;
+		font-weight: bold;
+		height: 25px;
+		width: 25px;
+		text-align: center;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	.modal-content-acs, .modal-content-bd, .modal-content-corn, .modal-content-hummus, .modal-content-cvs, .modal-content-ftb, .modal-content-mlc, .modal-content-sag, .modal-content-br, .modal-content-cb, .modal-content-cm, .modal-content-ba {
+		text-align: center;
+
+	}
+	
+	h2{
+		font-size: 25px;
+		font-family:'Lobster', cursive;
+		text-decoration: underline;
+		padding-bottom: 15px;
+		color: #283018;
+	}
+
+	h3 {
+		font-size: 28px;
+		margin: 5px;
+		color: #283018;
+	}
+
+	p {
+		text-align: left;
+		margin-left: 5px;
+		font-size: 12px;
+	}
+}
+}
+
+

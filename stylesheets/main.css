@@ -21,7 +21,7 @@
           transition: all .5s;
           text-decoration: none;
           color: #aa863a;
-          font-size: 20px; }
+          font-size: 18px; }
           .nav-wrapper .nav-main li a:hover, .nav-wrapper .nav-main li a.is-current {
             color: #283018;
             background-color: #ccc; }
@@ -32,7 +32,7 @@
       padding: 0;
       list-style-type: none;
       font-family: 'Lobster', cursive;
-      font-size: 20px; }
+      font-size: 18px; }
       .nav-wrapper .nav-logo .nav-logo-li {
         padding: 9px 18px; } }
 @media all and (max-width: 550px) {
@@ -194,9 +194,51 @@ body {
 .section-container {
   height: 93.5vh; }
 
+#wrapper-top {
+  padding-bottom: 30px; }
+
+@media all and (min-width: 700px) {
+  #wrapper-home {
+    background-color: white;
+    width: 500px;
+    min-height: 200px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    border: 10px solid #aa863a; }
+
+  h1 {
+    text-align: center;
+    color: #283018;
+    font-size: 65px; }
+
+  #content-home {
+    text-align: center;
+    color: #283018;
+    font-size: 25px; } }
+@media all and (max-width: 700px) {
+  #wrapper-home {
+    background-color: white;
+    width: 370px;
+    min-height: 200px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    border: 10px solid #aa863a; }
+
+  h1 {
+    text-align: center;
+    color: #283018;
+    font-size: 40px; }
+
+  #content-home {
+    text-align: center;
+    color: #283018;
+    font-size: 18px; } }
 h2 {
   margin-bottom: 0px;
-  padding-bottom: 0px; }
+  padding-bottom: 0px;
+  font-size: 50px; }
 
 .slideshow {
   width: 100%;
@@ -229,13 +271,5 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); } }
-.headline-title {
-  font-size: 18px;
-  color: #aa863a; }
-
-.headline-title {
-  font-size: 50px;
-  text-align: left;
-  color: #283018; }
 
 /*# sourceMappingURL=main.css.map */

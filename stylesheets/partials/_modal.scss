@@ -3,7 +3,7 @@ body.modal-on-acs, body.modal-on-bd, body.modal-on-corn, body.modal-on-hummus, b
 	overflow: hidden;
 }
 
-.modal-wrapper-acs, .modal-wrapper-bd, .modal-wrapper-corn, .modal-wrapper-hummus, .modal-wrapper-cvs, .modal-wrapper-ftb, .modal-wrapper-mlc, .modal-wrapper-sag, .modal-wrapper-br, .modal-wrapper-cb, .modal-wrapper-cm, .modal-wrapper-ba {
+.modal-wrapper{
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -12,8 +12,7 @@ body.modal-on-acs, body.modal-on-bd, body.modal-on-corn, body.modal-on-hummus, b
 	background-color: rgba(0,0,0,0.4);
 	display: none;
 
-
-	.modal-acs, .modal-bd, .modal-corn, .modal-hummus, .modal-cvs, .modal-ftb, .modal-mlc, .modal-sag, .modal-br, .modal-cb, .modal-cm, .modal-ba {
+	.modal {
 		background-color: white;
 		width: 500px;
 		min-height: 200px;
@@ -24,7 +23,7 @@ body.modal-on-acs, body.modal-on-bd, body.modal-on-corn, body.modal-on-hummus, b
 		border: 10px solid #aa863a;
 		
 	}
-	.js-modal-close-acs, .js-modal-close-bd, .js-modal-close-corn, .js-modal-close-hummus, .js-modal-close-cvs, .js-modal-close-ftb, .js-modal-close-mlc, .js-modal-close-sag, .js-modal-close-br, .js-modal-close-cb, .js-modal-close-cm, .js-modal-close-ba {
+	.js-modal-close {
 		float: left;
 		font-size: 10px;
 		font-weight: bold;
@@ -35,8 +34,10 @@ body.modal-on-acs, body.modal-on-bd, body.modal-on-corn, body.modal-on-hummus, b
 		margin: 0px;
 	}
 
+	.modal-content,
 	.modal-content-acs, .modal-content-bd, .modal-content-corn, .modal-content-hummus, .modal-content-cvs, .modal-content-ftb, .modal-content-mlc, .modal-content-sag, .modal-content-br, .modal-content-cb, .modal-content-cm, .modal-content-ba {
 		text-align: center;
+		display: none;
 
 	}
 	
@@ -45,6 +46,7 @@ body.modal-on-acs, body.modal-on-bd, body.modal-on-corn, body.modal-on-hummus, b
 		font-family:'Lobster', cursive;
 		text-decoration: underline;
 		padding-bottom: 15px;
+		margin-top: 5px;
 		color: #283018;
 	}
 
@@ -67,8 +69,7 @@ body.modal-on-acs, body.modal-on-bd, body.modal-on-corn, body.modal-on-hummus, b
 body.modal-on-acs, body.modal-on-bd, body.modal-on-corn, body.modal-on-hummus, body.modal-on-cvs, body.modal-on-ftb, body.modal-on-mlc, body.modal-on-sag, body.modal-content-br, body.modal-content-cb, body.modal-content-cm, body.modal-content-ba {
 	overflow: hidden;
 }
-
-.modal-wrapper-acs, .modal-wrapper-bd, .modal-wrapper-corn, .modal-wrapper-hummus, .modal-wrapper-cvs, .modal-wrapper-ftb, .modal-wrapper-mlc, .modal-wrapper-sag, .modal-wrapper-br, .modal-wrapper-cb, .modal-wrapper-cm, .modal-wrapper-ba {
+.modal-wrapper{
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -77,8 +78,7 @@ body.modal-on-acs, body.modal-on-bd, body.modal-on-corn, body.modal-on-hummus, b
 	background-color: rgba(0,0,0,0.4);
 	display: none;
 
-
-	.modal-acs, .modal-bd, .modal-corn, .modal-hummus, .modal-cvs, .modal-ftb, .modal-mlc, .modal-sag, .modal-br, .modal-cb, .modal-cm, .modal-ba {
+	.modal {
 		background-color: white;
 		width: 370px;
 		min-height: 200px;
@@ -86,10 +86,10 @@ body.modal-on-acs, body.modal-on-bd, body.modal-on-corn, body.modal-on-hummus, b
 		position: relative;
 		top:50%;
 		transform: translateY(-50%);
-		border: 10px solid #aa863a;
+		border: 5px solid #aa863a;
 		
 	}
-	.js-modal-close-acs, .js-modal-close-bd, .js-modal-close-corn, .js-modal-close-hummus, .js-modal-close-cvs, .js-modal-close-ftb, .js-modal-close-mlc, .js-modal-close-sag, .js-modal-close-br, .js-modal-close-cb, .js-modal-close-cm, .js-modal-close-ba {
+	.js-modal-close {
 		float: left;
 		font-size: 10px;
 		font-weight: bold;
@@ -100,8 +100,10 @@ body.modal-on-acs, body.modal-on-bd, body.modal-on-corn, body.modal-on-hummus, b
 		margin: 0px;
 	}
 
+	.modal-content,
 	.modal-content-acs, .modal-content-bd, .modal-content-corn, .modal-content-hummus, .modal-content-cvs, .modal-content-ftb, .modal-content-mlc, .modal-content-sag, .modal-content-br, .modal-content-cb, .modal-content-cm, .modal-content-ba {
 		text-align: center;
+		display: none;
 
 	}
 	
@@ -111,10 +113,11 @@ body.modal-on-acs, body.modal-on-bd, body.modal-on-corn, body.modal-on-hummus, b
 		text-decoration: underline;
 		padding-bottom: 15px;
 		color: #283018;
+		margin-top: 5px;
 	}
 
 	h3 {
-		font-size: 28px;
+		font-size: 20px;
 		margin: 5px;
 		color: #283018;
 	}

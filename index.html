@@ -40,25 +40,72 @@
 			<section id="page-starters">
 				<h2 class="headline-title">Starters</h2>
 				<div class="slideshow">
-					<img class ="starters" id="js-modal-open-acs" src="food-images/avocado-caprese-salad.png">
-					<img class ="starters" id="js-modal-open-bd" src="food-images/buffalo-dip.png">
-					<img class ="starters" id="js-modal-open-corn" src="food-images/corn.png">
-					<img class ="starters" id="js-modal-open-hummus" src="food-images/hummus.png">
+								<p class="reveal" >Click on the Image to Reveal the Recipe</p>
+					<img class="js-modal-open starters" data-modal-content="acs" src="food-images/avocado-caprese-salad.png">
+					<img class="js-modal-open starters" data-modal-content="bd" src="food-images/buffalo-dip.png">
+					<img class="js-modal-open starters" data-modal-content="corn" src="food-images/corn.png">
+					<img class="js-modal-open starters" data-modal-content="hummus" src="food-images/hummus.png">
+				</div>
+			
+				<div class="button-container">
+					<button class="previous-starters button-secondary">Prev</button>
+					<button class="js-reverse-starters button-secondary button-flipped">&#9658</button>
+					<button class="js-pause-starters button-secondary">&#10074;&#10074</button>
+					<button class="js-play-starters button-secondary">&#9658</button>
+					<button class="next-starters button-secondary">Next</button>
+				</div>
+
+			</section>	
+		</div>
+
+		<div class="section-container">
+			<section id="page-entrees">
+				<h2 class="headline-title">Entrees</h2>
+				<div class="slideshow">
+				<p class="reveal">Click on the Image to Reveal the Recipe</p>
+					<img class ="js-modal-open entrees" data-modal-content="cvs" src="food-images/chicken-veggie-skillet.png">
+					<img class ="js-modal-open entrees" data-modal-content="ftb" src="food-images/feta-turkey-burger.png">
+					<img class ="js-modal-open entrees" data-modal-content="mlc" src="food-images/mustard-lime-chicken.png">
+					<img class ="js-modal-open entrees" data-modal-content="sag" src="food-images/shrimp-and-grits.png">
 				</div>
 				<div class="button-container">
-					<button class="js-play-starters button-secondary">&#9658</button>
-					<button class="js-pause-starters button-secondary">&#10074;&#10074</button>
-					<button class="js-reverse-starters button-secondary button-flipped">&#9658</button>
+					<button class="previous-entrees button-secondary">Prev</button>
+					<button class="js-reverse-entrees button-secondary button-flipped">&#9658</button>
+					<button class="js-pause-entrees button-secondary">&#10074;&#10074</button>
+					<button class="js-play-entrees button-secondary">&#9658</button>
+					<button class="next-entrees button-secondary">Next</button>
 				</div>
-				
-				<div class="modal-wrapper-acs">
-					<div class="modal-acs">
-						<header class="modal-header-acs">
-							<button class="btn js-modal-close-acs">x</button>
+			</section>
+		</div>	
+
+		<div class="section-container">
+			<section id="page-desserts">
+				<h2 class="headline-title">Desserts</h2>
+				<div class="slideshow">
+					<p class="reveal">Click on the Image to Reveal the Recipe</p>
+					<img class="js-modal-open desserts" data-modal-content="br" src="food-images/berry-ricotta.png">
+					<img class="js-modal-open desserts" data-modal-content="cb" src="food-images/chocolate-banana.png">
+					<img class="js-modal-open desserts" data-modal-content="cm" src="food-images/chocolate-mousse.png">
+					<img class="js-modal-open desserts" data-modal-content="ba" src="food-images/baked-apple.png">
+				</div>
+				<div class="button-container">
+					<button class="previous-desserts button-secondary">Prev</button>
+					<button class="js-reverse-desserts button-secondary button-flipped">&#9658</button>
+					<button class="js-pause-desserts button-secondary">&#10074;&#10074</button>
+					<button class="js-play-desserts button-secondary">&#9658</button>
+					<button class="next-desserts button-secondary">Next</button>
+				</div>
+			</section>	
+		</div>
+		<!-- <div class="modal-wrapper-acs"> -->
+				<div class="modal-wrapper">
+					<div class="modal">
+						<header class="modal-header">
+							<button class="btn js-modal-close">x</button>
 						</header>
 						<br>
 						<!-- Avocado Caprese Salad -->
-						<div class="modal-content-acs">
+						<div class="modal-content" id="modal-content-acs">
 							<h2>Avocado Caprese Salad</h2>
 							<h3>Ingredients</h3>
 							<p>2 cups fresh arugula</p>
@@ -73,17 +120,9 @@
 							<h3>Directions</h3>
 							<p>Assemble the arugula, tomato, avocado slices and mozzarella in a serving bowl. Top with torn or slivered basil leaves. Whisk the extra virgin olive oil in a small bowl with the balsamic vinegar, sugar or honey and season with kosher salt and freshly ground black pepper to taste and pour over the salad. Toss to coat and serve.</p>
 						</div>
-					</div>
-				</div>
-			
-				<div class="modal-wrapper-bd">
-					<div class="modal-bd">
-						<header class="modal-header-bd">
-							<button class="btn js-modal-close-bd">x</button>
-						</header>
-						<br>
-						<!-- Buffalo Dip -->
-						<div class="modal-content-bd">
+
+						<!-- BD -->
+						<div class="modal-content" id="modal-content-bd">
 							<h2>Buffalo Dip</h2>
 							<h3>Ingredients</h3>
 							<p>1 package (8 ounces) cream cheese, softened</p>
@@ -95,17 +134,9 @@
 							<h3>Directions</h3>
 							<p>Preheat oven to 350°. Spread cream cheese into an ungreased shallow 1-qt. baking dish. Layer with chicken, wing sauce and salad dressing. Sprinkle with cheese. Bake, uncovered, 20-25 minutes or until cheese is melted. If desired, serve with baguette slices. Yield: about 2 cups.</p>
 						</div>
-					</div>
-				</div>
-				
-				<div class="modal-wrapper-corn">
-					<div class="modal-corn">
-						<header class="modal-header-corn">
-							<button class="btn js-modal-close-corn">x</button>
-						</header>
-						<br>
-						<!-- Corn -->
-						<div class="modal-content-corn">
+
+						<!-- corn -->
+						<div class="modal-content" id="modal-content-corn">
 							<h2>Corn</h2>
 							<h3>Ingredients</h3>
 							<p>1/2 cup olive oil</p>
@@ -117,16 +148,9 @@
 							<h3>Directions</h3>
 							<p>Heat the oil in a heavy small skillet over medium heat. Add the garlic and saute until tender and fragrant, about 1 minute. Remove the skillet from the heat and cool. Set aside 2 tablespoons of the Parmesan cheese and stir the rest into the garlic mixture, along with the parsley and salt. Cook the corn in a large saucepan of boiling salted water until crisp-tender, about 5 minutes. Using tongs, transfer the corn to a platter. Brush the cheese mixture over the hot corn and serve. Sprinkle the remaining 2 tablespoons of cheese on top of the corn.</p>
 						</div>
-					</div>
-				</div>
-				<div class="modal-wrapper-hummus">
-					<div class="modal-hummus">
-						<header class="modal-header-hummus">
-							<button class="btn js-modal-close-hummus">x</button>
-						</header>
-						<br>
-						<!-- Hummus -->
-						<div class="modal-content-hummus">
+
+						<!-- hummus -->
+						<div class="modal-content" id="modal-content-hummus">
 							<h2>Hummus</h2>
 							<h3>Ingredients</h3>
 							<p>2 cups drained well-cooked or canned chickpeas, liquid reserved</p>
@@ -140,34 +164,9 @@
 							<h3>Directions</h3>
 							<p>Put everything except the parsley in a food processor and begin to process; add the chickpea liquid or water as needed to allow the machine to produce a smooth puree. Taste and adjust the seasoning (I often find I like to add much more lemon juice). Serve, drizzled with the olive oil and sprinkled with a bit more cumin or paprika and some parsley.</p>
 						</div>
-					</div>
-				</div>
 
-			</section>	
-		</div>
-
-		<div class="section-container">
-			<section id="page-entrees">
-				<h2 class="headline-title">Entrees</h2>
-				<div class="slideshow">
-					<img class ="entrees" id="js-modal-open-cvs" src="food-images/chicken-veggie-skillet.png">
-					<img class ="entrees" id="js-modal-open-ftb" src="food-images/feta-turkey-burger.png">
-					<img class ="entrees" id="js-modal-open-mlc" src="food-images/mustard-lime-chicken.png">
-					<img class ="entrees" id="js-modal-open-sag" src="food-images/shrimp-and-grits.png">
-				</div>
-				<div class="button-container">
-					<button class="js-play-entrees button-secondary">&#9658</button>
-					<button class="js-pause-entrees button-secondary">&#10074;&#10074</button>
-					<button class="js-reverse-entrees button-secondary button-flipped">&#9658</button>
-				</div>
-				<div class="modal-wrapper-cvs">
-					<div class="modal-cvs">
-						<header class="modal-header-cvs">
-							<button class="btn js-modal-close-cvs">x</button>
-						</header>
-						<br>
-						<!-- Chicken Veggie Skillet -->
-						<div class="modal-content-cvs">
+						<!-- cvs -->
+						<div class="modal-content" id="modal-content-cvs">
 							<h2>Chicken Veggie Skillet</h2>
 							<h3>Ingredients</h3>
 							<p>1/2 pound boneless skinless chicken breast</p>
@@ -182,16 +181,8 @@
 							<h3>Directions</h3>
 							<p>Place bread crumbs in a large resealable plastic bag. Add chicken and shake to coat. In a large skillet coated with cooking spray, cook chicken in 1 teaspoon oil over medium heat until juices run clear. Remove and keep warm. In the same skillet, saute onion and carrot in remaining oil until crisp-tender. Add the zucchini, squash, garlic, pepper and salt; saute 4-5 minutes longer or until vegetables are tender. Return chicken to pan; sprinkle with cheese. </p>
 						</div>
-					</div>
-				</div>
-				<div class="modal-wrapper-ftb">
-					<div class="modal-ftb">
-						<header class="modal-header-ftb">
-							<button class="btn js-modal-close-ftb">x</button>
-						</header>
-						<br>
-						<!-- feta turkey burger -->
-						<div class="modal-content-ftb">
+						<!-- ftb -->
+						<div class="modal-content" id="modal-content-ftb">
 							<h2>Feta Turkey Burger</h2>
 							<h3>Ingredients</h3>
 							<p>4 pearl tomatoes, sliced in half & squeezed</p>
@@ -206,16 +197,8 @@
 							<h3>Directions</h3>
 							<p>In a food processor, chop the tomatoes, garlic, onion and basil. In a large bowl, using a rubber spatula, gently combine all of the ingredients (tomato mixture with everything else). Go light on the salt since the feta compliments this dish so well. Form your patties and place them on wax or parchment paper.  Remember, they do shrink a bit, so don't form them too small. Heat a grill pan on medium high heat.  When pan is hot, add the patties. Reduce heat to medium low or low, and cook about 5 minutes on each side (more if they are thick).   </p>
 						</div>
-					</div>
-				</div>
-				<div class="modal-wrapper-mlc">
-					<div class="modal-mlc">
-						<header class="modal-header-mlc">
-							<button class="btn js-modal-close-mlc">x</button>
-						</header>
-						<br>
-						<!-- mustard-lime-chicken -->
-						<div class="modal-content-mlc">
+						<!-- mlc -->
+						<div class="modal-content" id="modal-content-mlc">
 							<h2>Mustard Lemon Chicken</h2>
 							<h3>Ingredients</h3>
 							<p>1⁄4 cup lemon juice</p>
@@ -228,16 +211,8 @@
 							<h3>Directions</h3>
 							<p>Combine lemon juice, oil, mustard, sugar, salt and pepper. Place chicken in single layer in non-aluminum baking dish.Pour lemon-mustard marinade over chicken. Turn to coat. Refrigerate, covered 30-45 minutes, turning once. Broil chicken on broiler pan with oven rack 5 inches from heat for 25-30 minutes or until no longer pink. Turn and baste every 5 minutes while cooking.</p>
 						</div>
-					</div>
-				</div>
-				<div class="modal-wrapper-sag">
-					<div class="modal-sag">
-						<header class="modal-header-sag">
-							<button class="btn js-modal-close-sag">x</button>
-						</header>
-						<br>
-						<!-- Shrimp and Grits -->
-						<div class="modal-content-sag">
+						<!-- sag -->
+						<div class="modal-content" id="modal-content-sag">
 							<h2>Shrimp and Grits</h2>
 							<h3>Ingredients</h3>
 							<p>3 cups chicken broth</p>
@@ -255,34 +230,8 @@
 							<h3>Directions</h3>
 							<p>Bring chicken broth to a boil over medium-high heat; stir in grits. Cook, stirring occasionally, 5 to 7 minutes or until thickened. Remove from heat; stir in salt and next 3 ingredients. Set aside, and keep warm. Cook bacon in a large nonstick skillet over medium-high heat 3 minutes or until crisp; remove bacon from pan. Cook shrimp in same pan over medium-high heat 3 minutes or until almost pink, stirring occasionally. Add lemon juice and next 4 ingredients, and cook 3 minutes. Stir in bacon. Spoon grits onto individual plates or into shallow bowls; top with shrimp mixture. Serve immediately.</p>
 						</div>
-					</div>
-				</div>
-
-			</section>
-		</div>	
-
-		<div class="section-container">
-			<section id="page-desserts">
-				<h2 class="headline-title">Desserts</h2>
-				<div class="slideshow">
-					<img class="desserts" id="js-modal-open-br" src="food-images/berry-ricotta.png">
-					<img class="desserts" id="js-modal-open-cb" src="food-images/chocolate-banana.png">
-					<img class="desserts" id="js-modal-open-cm" src="food-images/chocolate-mousse.png">
-					<img class="desserts" id="js-modal-open-ba" src="food-images/baked-apple.png">
-				</div>
-				<div class="button-container">
-					<button class="js-play-desserts button-secondary">&#9658</button>
-					<button class="js-pause-desserts button-secondary">&#10074;&#10074</button>
-					<button class="js-reverse-desserts button-secondary button-flipped">&#9658</button>
-				</div>
-				<div class="modal-wrapper-br">
-					<div class="modal-br">
-						<header class="modal-header-br">
-							<button class="btn js-modal-close-br">x</button>
-						</header>
-						<br>
-						<!-- berry-ricotta -->
-						<div class="modal-content-br">
+						<!-- br -->
+						<div class="modal-content" id="modal-content-br">
 							<h2>Berry Ricotta</h2>
 							<h3>Ingredients</h3>
 							<p>2 cups low fat ricotta</p>
@@ -293,16 +242,8 @@
 							<h3>Directions</h3>
 							<p>Preheat oven to 200°C/395°F. In a bowl, combine all of your ingredients except the blueberries. Divide the blueberries among each of the ramekins**, adding just enough to cover the bottom. Pour your ricotta mixture over the top of the blueberries. Bake until set and the ricotta starts to turn golden. Serve warm in ramekins or chill in the fridge. </p>
 						</div>
-					</div>
-				</div>
-				<div class="modal-wrapper-cb">
-					<div class="modal-cb">
-						<header class="modal-header-cb">
-							<button class="btn js-modal-close-cb">x</button>
-						</header>
-						<br>
-						<!-- chocolate-banana -->
-						<div class="modal-content-cb">
+						<!-- cb -->
+						<div class="modal-content" id="modal-content-cb">
 							<h2>Chocolate Banana </h2>
 							<h3>Ingredients</h3>
 							<p>4 medium ripe but firm bananas</p>
@@ -312,16 +253,8 @@
 							<h3>Directions</h3>
 							<p>Peel, then cut each banana in half crosswise and insert a craft stick into each half. Place on a tray, cover with plastic wrap and place in the freezer until frozen, about 3 hours.Place the peanuts in a shallow dish or on a plate. Melt the chocolate in the top of a double boiler over slightly simmering water, over the lowest possible heat, stirring frequently. Make sure the water is not touching the bottom of the top pan. Pour the melted chocolate into a tall glass. Dip each frozen banana into the chocolate, turning it to coat, and immediately roll in the peanuts. Place on a tray covered in waxed paper. Serve immediately or wrap individually in plastic wrap or waxed paper and freeze for up to 2 weeks.</p>
 						</div>
-					</div>
-				</div>
-				<div class="modal-wrapper-cm">
-					<div class="modal-cm">
-						<header class="modal-header-cm">
-							<button class="btn js-modal-close-cm">x</button>
-						</header>
-						<br>
-						<!-- chocolate-mousse -->
-						<div class="modal-content-cm">
+						<!-- cm -->
+						<div class="modal-content" id="modal-content-cm">
 							<h2>Chocolate Mousse</h2>
 							<h3>Ingredients</h3>
 							<p>2 cups chilled heavy cream</p>
@@ -332,16 +265,8 @@
 							<h3>Directions</h3>
 							<p>Heat 3/4 cup cream in a 1-quart heavy saucepan until hot. Whisk together yolks, sugar, and a pinch of salt in a metal bowl until combined well, then add hot cream in a slow stream, whisking until combined. Transfer mixture to saucepan and cook over moderately low heat, stirring constantly, until it registers 160°F on thermometer. Pour custard through a fine-mesh sieve into a bowl and stir in vanilla. Melt chocolate in a double boiler or a metal bowl set over a pan of simmering water (or in a glass bowl in a microwave at 50 percent power 3 to 5 minutes), stirring frequently. Whisk custard into chocolate until smooth, then cool. Beat remaining 1 1/4 cups cream in a bowl with an electric mixer until it just holds stiff peaks. Whisk one fourth of cream into chocolate custard to lighten, then fold in remaining cream gently but thoroughly. Spoon mousse into 8 (6-ounce) stemmed glasses or ramekins and chill, covered, at least 6 hours. Let stand at room temperature about 20 minutes before serving.</p>
 						</div>
-					</div>
-				</div>
-				<div class="modal-wrapper-ba">
-					<div class="modal-ba">
-						<header class="modal-header-ba">
-							<button class="btn js-modal-close-ba">x</button>
-						</header>
-						<br>
-						<!-- Baked Apple -->
-						<div class="modal-content-ba">
+						<!-- ba -->
+						<div class="modal-content" id="modal-content-ba">
 							<h2>Baked Apple</h2>
 							<h3>Ingredients</h3>
 							<p>4 large baking apples, such as Honeycrisp</p>
@@ -352,11 +277,9 @@
 							<h3>Directions</h3>
 							<p>Preheat the oven to 375 degrees F. Wash and core apples, leaving enough of the core at the base of the apple to contain the filling. Combine the butter, brown sugar, cinnamon and chopped pecans in a small bowl. Roll log shapes of the mixture and press enough into each apple to fill the core. Fill a 2-quart baking dish with about 3/4 cup water, or enough to cover the bottom. Place the apples upright in the dish. Bake until the apples are soft and the filling is browned, 1 hour.</p>
 						</div>
+
 					</div>
 				</div>
-
-			</section>	
-		</div>
 
 	</body>
 </html>

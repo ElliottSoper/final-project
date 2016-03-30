@@ -1,5 +1,3 @@
-//modal
-
 
 // Scrolling JS
 $(document).on("ready", function(){
@@ -46,6 +44,14 @@ $(document).on("ready", function(){
 	// invoke doSlides() via a click event on $('img'),
 	$('img.starters, .js-pause-starters').on('click', function(){
 		clearInterval(autoPlay);
+	});
+
+	$('.next-starters, .js-next-starters').on('click', function(){
+		doSlidesStarters('next');
+	});
+
+	$('.previous-starters, .js-previous-starters').on('click', function(){
+		doSlidesStarters('reverse');
 	});
 	// create an interval
 	// stuff this into a button click event
@@ -110,6 +116,14 @@ $(document).on("ready", function(){
 	$('img.entrees, .js-pause-entrees').on('click', function(){
 		clearInterval(autoPlay);
 	});
+
+	$('.next-entrees, .js-next-entrees').on('click', function(){
+		doSlidesEntrees('next');
+	});
+
+	$('.previous-entrees, .js-next-entrees').on('click', function(){
+		doSlidesEntrees('reverse');
+	});
 	// create an interval
 	// stuff this into a button click event
 	// when you do this, note that var autoPlay
@@ -173,6 +187,15 @@ $(document).on("ready", function(){
 $('img.desserts, .js-pause-desserts').on('click', function(){
 		clearInterval(autoPlay);
 	});
+
+$('.next-desserts, .js-next-desserts').on('click', function(){
+		doSlidesDesserts('next');
+	});
+
+	$('.previous-desserts, .js-next-desserts').on('click', function(){
+		doSlidesDesserts('previous');
+	});
+
 	// create an interval
 	// stuff this into a button click event
 	// when you do this, note that var autoPlay

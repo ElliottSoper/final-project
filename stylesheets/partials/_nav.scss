@@ -119,3 +119,62 @@
 }
 }
 
+@media all and (max-width: 400px){
+.nav-wrapper {
+	background-color: #eee;
+	border-bottom: 1px solid black;
+	overflow: auto; // hold the height even with floated children
+	position: fixed;
+	z-index:1;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	.nav-main {
+		margin: 0;
+		padding: 0;
+
+
+		li {
+			display: block;
+			float: left;
+
+			a {
+				display: block;
+				padding: 9px 18px;
+				transition: all .5s;
+				text-decoration: none;
+				color: #aa863a;
+				line-height: 35px;
+				font-size: 18px;
+
+				&:hover,
+				&.is-current {
+					color: #283018;
+					background-color: #ccc;
+				}
+			}
+		}
+	}
+
+	.nav-logo {
+			float: right;			
+			display: none;
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			font-family:'Lobster', cursive;
+
+
+		
+
+			.nav-logo-li {
+				padding: 9px 18px;
+
+
+		}
+	}
+
+}
+}
+

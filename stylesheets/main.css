@@ -60,7 +60,7 @@
           transition: all .5s;
           text-decoration: none;
           color: #aa863a;
-          line-height: 35px;
+          line-height: 30px;
           font-size: 20px; }
           .nav-wrapper .nav-main li a:hover, .nav-wrapper .nav-main li a.is-current {
             color: #283018;
@@ -96,8 +96,8 @@
           transition: all .5s;
           text-decoration: none;
           color: #aa863a;
-          line-height: 35px;
-          font-size: 18px; }
+          line-height: 20px;
+          font-size: 12px; }
           .nav-wrapper .nav-main li a:hover, .nav-wrapper .nav-main li a.is-current {
             color: #283018;
             background-color: #ccc; }
@@ -176,7 +176,7 @@ button {
       font-family: 'Lobster', cursive;
       text-decoration: underline;
       padding-bottom: 15px;
-      margin-top: 5px;
+      margin-top: 10px;
       color: #283018; }
     .modal-wrapper h3 {
       font-size: 20px;
@@ -226,7 +226,7 @@ button {
       text-decoration: underline;
       padding-bottom: 15px;
       color: #283018;
-      margin-top: 5px; }
+      margin-top: 10px; }
     .modal-wrapper h3 {
       font-size: 20px;
       margin: 5px;
@@ -370,7 +370,7 @@ body {
   h2 {
     margin-bottom: 0px;
     padding-bottom: 0px;
-    font-size: 30px; } }
+    font-size: 15px; } }
 .reveal {
   text-align: center;
   margin: 5px;

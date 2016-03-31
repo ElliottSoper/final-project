@@ -111,7 +111,8 @@
       .nav-wrapper .nav-logo .nav-logo-li {
         padding: 9px 18px; } }
 .button-container {
-  text-align: center; }
+  text-align: center;
+  line-height: 45px; }
 
 button {
   height: 45px;
@@ -151,8 +152,9 @@ button {
     display: none; }
     .modal-wrapper .modal {
       background-color: white;
-      width: 500px;
+      width: 600px;
       min-height: 200px;
+      max-height: 85%;
       margin: 0 auto;
       position: relative;
       top: 50%;
@@ -202,6 +204,7 @@ button {
       background-color: white;
       width: 370px;
       min-height: 200px;
+      max-height: 85%;
       margin: 0 auto;
       position: relative;
       top: 50%;

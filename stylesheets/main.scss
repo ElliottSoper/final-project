@@ -56,6 +56,8 @@ body {
 		border: 10px solid #aa863a;
 	}
 
+
+
 	h1 {
 		text-align: center;
 		color: #283018;
@@ -107,6 +109,7 @@ body {
 		margin-right: 5px;
 		font-family:'Lobster';
 	}
+	/*
 	.previous-starters {
 		display: none;
 	}
@@ -125,8 +128,7 @@ body {
 	.next-desserts {
 		display: none;
 	}
-}
-
+*/}
 
 
 
@@ -153,7 +155,7 @@ body {
 		opacity: 1;
 
 		&:hover {
-			opacity: .7;
+			opacity: .5;
 			border: 4px solid #aa863a;
 
 		}
@@ -178,10 +180,10 @@ body {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		opacity: .5;
+		opacity: 1;
 
 		&:hover {
-			opacity: 1;
+			opacity: .5;
 			border: 4px solid #aa863a;
 
 		}
@@ -205,10 +207,10 @@ body {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		opacity: .5;
+		opacity: 1;
 
 		&:hover {
-			opacity: 1;
+			opacity: .5;
 			border: 4px solid #aa863a;
 
 		}
@@ -216,7 +218,7 @@ body {
 	h2 {
 		margin-bottom: 0px;
 		padding-bottom: 0px;
-		font-size: 15px;
+		font-size: 20px;
 	}
 }
 
@@ -226,9 +228,10 @@ body {
 	font-weight: bold;
 }	
 
-.slideshow {
-	padding-bottom: -15px;
+
+@media all and (min-width: 400px){
+	.slideshow {
+	height: 500px;
+	}
 }
-
-
 

@@ -97,7 +97,7 @@
           text-decoration: none;
           color: #aa863a;
           line-height: 20px;
-          font-size: 18px; }
+          font-size: 13px; }
           .nav-wrapper .nav-main li a:hover, .nav-wrapper .nav-main li a.is-current {
             color: #283018;
             background-color: #ccc; }
@@ -318,32 +318,11 @@ body {
 
   #content-about {
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 15px;
     margin-left: 5px;
     margin-right: 5px;
-    font-family: 'Lobster'; }
-
-  	/*
-  	.previous-starters {
-  		display: none;
-  	}
-  	.next-starters {
-  		display: none;
-  	}
-  	.previous-entrees {
-  		display: none;
-  	}
-  	.next-entrees {
-  		display: none;
-  	}
-  	.previous-desserts {
-  		display: none;
-  	}
-  	.next-desserts {
-  		display: none;
-  	}
-  */ }
+    font-family: 'Lobster'; } }
 .slideshow {
   width: 100%;
   position: relative;
@@ -421,6 +400,6 @@ body {
 
 @media all and (min-width: 400px) {
   .slideshow {
-    height: 500px; } }
+    height: 450px; } }
 
 /*# sourceMappingURL=main.css.map */
